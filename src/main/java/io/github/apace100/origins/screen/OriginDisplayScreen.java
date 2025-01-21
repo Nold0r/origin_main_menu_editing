@@ -131,7 +131,7 @@ public class OriginDisplayScreen extends Screen {
             Quaternionf yaw = new Quaternionf().rotateY((float) Math.toRadians(180) - (float) Math.atan((mouseX - ((this.width)/2f)) / 40.0f));
             Quaternionf pitch = new Quaternionf().rotateX((float) Math.toRadians(180));
 
-            InventoryScreen.drawEntity(context, (float) (this.width)/2f, (float) (this.height)/2f,60, new Vector3f(0, 0, 0), null, yaw, player);
+            InventoryScreen.drawEntity(context, (float) (this.width)/2f, (float) (this.height)/2f,60, new Vector3f(0, 0, 0), yaw, null, player);
         }
     }
     @Override
